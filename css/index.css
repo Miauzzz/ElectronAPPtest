@@ -1,0 +1,231 @@
+@font-face {font-family: 'Fredoka One';font-style: normal;font-weight: 300;src: url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');}
+/* Definiciones para colorear la pagina */
+:root {
+    --background: #929292;                      /* Fondo del programa en general   */
+    --bgMenu-principal: #394240;                /* Fondo de la sidebar             */
+    --cinta-seccion: #45AAB8;                   /* Indica en que sección estamos   */
+    --lineas-menu: rgba(0, 0, 0, 30%);          /* con 30% de opacity              */
+    --lineas-menulogo: rgba(255, 255, 255, 20);   /* con 20% de opacity              */
+
+}
+
+/* |||||||||||||||||||||||||||||||||||||| */
+
+
+*{
+    background:var(--background);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+  }
+  
+body {
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    overflow: hidden;
+  }
+
+  .backgroundp{
+    background: url(../images/fondo.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    overflow: hidden;
+ }
+
+
+ /*   Contenido de la sidebar   */
+
+  .sidebar {
+    height: 100vh; 
+    width: 249px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--bgMenu-principal);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente */
+    justify-content: center; /* Centra verticalmente */
+    border-right: 3px solid var(--cinta-seccion);
+    overflow: hidden;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: var(--bgMenu-principal);
+    display: block;
+    overflow: hidden;
+  }
+
+  .sidebar li {
+    margin-bottom: 50px;
+    display: block;
+    overflow: hidden;
+  }
+  
+  .sidebar a {
+    position: relative;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration:none;
+    text-align: center;
+    justify-content: center;
+    height: 50px;
+    display: block;
+    padding: 16px 31px;
+    transition: background-color 0.3s;
+    background-color: var(--bgMenu-principal);
+    display: block;
+    overflow: hidden;
+}
+  
+  .sidebar a:hover {
+    background-color:var(--cinta-seccion);
+    margin: 0px;
+    display: block;
+    overflow: hidden;
+  }
+
+  
+  .content {
+    margin-left: 250px;
+    padding: 20px;   
+    overflow: hidden;   
+  }
+
+  .engranaje img {
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    left: 96px;
+    top: 153px;
+    background: none; /* Sin fondo */
+    z-index: 9999; /* Asegura que esté por encima de otros elementos */
+    cursor: pointer;
+    overflow: hidden;
+}
+
+  .reparaciones h1{
+    position: absolute;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    left: 53px;
+    top: 125px;
+    display: block;
+    font-size: 20px;
+    z-index: 9999; 
+    background: none; 
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+  .engranaje h1 {
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    text-align: center;
+    left: 12px;
+    top: 145px;
+    display: block;
+    z-index: 9999;
+    margin: 0; 
+    padding: 0; 
+    background: none; 
+    color: #fff;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.clickable-text {
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.cintaceleste {
+  background-color: var(--cinta-seccion);
+  height: 80px;
+  width: 250px;
+  top: 118px;
+  position: absolute;
+  z-index: 1; 
+  overflow: hidden;
+}
+
+
+.nav-link.active,
+.nav-link:hover {
+  background-color: var(--cinta-seccion);
+  color: white; 
+  overflow: hidden;
+}
+
+/*   FIN DE CONTENT    */
+
+
+
+
+
+/* INICIO DE CONTENT-SECTION */
+.content-section {
+  background: none;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  position: absolute;
+  height: calc(110vh - 76px); 
+  margin-left: calc((100vw - 250px) / 2);
+  text-align: center;
+  overflow: hidden;
+}
+
+.main-blur {
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(0.6rem);
+  -webkit-backdrop-filter: blur(0.6rem);
+  border-radius: 10px;
+  z-index: 0;
+  height: 145px;
+  width: 515px;
+  position: absolute;
+  display: block;
+  left: 40%;
+  margin-top: 300px;
+}
+
+/* Estilos para .content-section .logo-main */
+.content-section .logo-main {
+  display: block; 
+  height: 70px;
+  z-index: 9999; 
+  position: absolute; 
+  top: 50%; 
+  margin-right: 50px;
+  margin-top: 8px;
+  transform: translateY(-50%);
+  background: none;
+}
+
+/* Estilos para .content-section .texto-main */
+.content-section .texto-main {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 70px;
+  display: block;
+  z-index: 9998;
+  position: relative;
+  margin-bottom: 20px;
+  background: none;
+}
+/* FIN DE CONTENT-SECTION */

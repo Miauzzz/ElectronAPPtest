@@ -1,0 +1,40 @@
+.backgroundb{
+    background: url(../images/fondodb.jpg) no-repeat center center fixed;
+    background-size:cover;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    left: 10%;
+    z-index: 0;
+    overflow: hidden;
+}
+
+table{
+    position: relative; 
+    display: block;
+    padding: 15px;
+    width: 800px;
+    height: 80vh;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 100px;
+    margin-left: 25%;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(0.3rem);
+    -webkit-backdrop-filter: blur(0.3rem);
+}
+
+ 
+th {
+
+    background-color: rgba(0, 0, 0, 0.87);
+    border: 1px solid rgba(0, 0, 0, 0.356);
+    border-radius: 5px;
+    color: white;
+    padding: 15px;
+    width: 300px;
+    height: 15px;
+    align-items: center;
+    text-align: center;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../JS/script.js"></script>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/Nueva-Reparación-Reg.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Tecnoconce Software - Nueva Reparación</title>
+    
+    <div class="backgroundp"></div>
+    
+    <div class="sidebar">
+        <ul>
+            <div style="background-color:var(--bgMenu-principal);" class="engranaje"> 
+            <div onclick="window.location.href='../index.html'" class="cintaceleste"></div>
+            <img class="engranaje" onclick="window.location.href='../index.html'"; src="../images/tecnoconce.png" alt="engranaje logo"></div>
+            <div class="reparaciones" onclick="window.location.href='../index.html'";><h1>Reparaciones</h1></div>
+            <div class="engranaje" onclick="window.location.href='../index.html'";> <h1>Tecn&nbsp;&nbsp;&nbsp;&nbsp;Conce</h1></div>
+           
+            <!-- Botones del sidebar -->
+            <li><a href="Nueva-Reparación.html" class="nav-link">Nueva reparación</a></li>
+            <li><a href="Gestionar-Clientes.html" class="nav-link" onclick="setActiveButton(this); changeContent('gestionarClientes')">Gestionar clientes</a></li>
+            <li><a href="Historial-Reparaciones.html" class="nav-link" onclick="setActiveButton(this); changeContent('historialReparaciones')">Historial de Reparaciones</a></li>
+        </ul>
+    </div>
+</head>
+<!-- desde aqui comienza el codigo -->
+<header>
+    <div class="texto-seccion">&nbsp;&nbsp;~ Seleccionar un cliente ya registrado en la base de datos&nbsp;&nbsp;</div>
+    <button class="bseleccionar" onclick="window.location.href='Seleccionar-clientes.html'">Seleccionar Cliente</button>
+</header>
+<body>
+
+    
+    <section class="section-form glass-effect">
+    
+
+    <div class="background-overlay" style="margin-bottom: 10px;background: none;"> <!-- margen para los botones -->
+        
+
+
+    <form style="margin-right: 453px;background: none" id="reparacion-form" onsubmit="guardarReparacion(); return false;">
+    <div style="margin-bottom: 5px;background: none"><label for="nombre">Nombre:</label></div>
+    <div style="margin-bottom: 5px;background: none"><input class="input-form" type="text" id="nombre" name="Nombre" required></div>
+
+    <div style="margin-bottom: 5px;background: none"><label for="contacto">Número de Contacto:</label></div>
+    <div style="margin-bottom: 5px;background: none"><input class="input-form" type="tel" id="contacto" name="contacto" required></div>
+
+    <div style="margin-bottom: 5px;background: none"><label for="direccion">Dirección:</label></div>
+    <div style="margin-bottom: 5px;background: none"><input class="input-form" type="text" id="direccion" name="dirección" required></div>
+    
+    <div style="margin-bottom: 5px;background: none"><label for="descripcion">Descripción:</label></div>
+    <div><textarea id="descripcion" name="descripcion" rows="1" cols="50"></textarea></div>
+
+</div>    
+
+
+<div class="radio">
+    <h3 style="margin-bottom: 20px;">Seleccione el motivo de reparación</h3>
+
+    <input type="radio" name="radio" checked/>
+    <span style="margin-right: 70px;">LED</span>
+    <input type="radio" name="radio"/>
+    <span>PANTALLA</span>
+    
+    <div style="margin-bottom: 10px;"></div> <!-- espaciado, no tocar-->
+    
+    <input type="radio" name="radio"/>
+    <span style="margin-right: 50px;">PLACA</span>
+
+    <input type="radio" name="radio"/>
+    <span>GARANTÍA</span>
+</div>
+
+
+</section>
+<footer>
+
+        <button class="botones" type="button" onclick="guardarCliente()" onsubmit="guardarHistorial(); return false;">Guardar</button>
+        <div><button class="botones" type="button" onclick="guardarCliente()" onsubmit="guardarHistorial(); return false;">Guardar e imprimir</button></div>
+        <button class="botones" onclick="window.location.href='Nueva-Reparación.html'">Cancelar</button>
+    </form>
+
+</footer>
+</body> 
+</html>

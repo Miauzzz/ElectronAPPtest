@@ -1,0 +1,214 @@
+@font-face {font-family: 'Fredoka One';font-style: normal;font-weight: 300;src: url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');}
+/* Estilos para el botón */
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*----------------------------------------
+      Para  Nueva-reparacion-reg.html       
+----------------------------------------*/
+
+
+/*    BOTON Y TEXTO "SELECCIONAR"      */
+
+.bseleccionar{
+   --color: #006eff;
+   background-color: #0000009c;
+   color: rgb(255, 255, 255);
+   font-family: Arial, Helvetica, sans-serif;
+   display: inline-block;
+   width: 11em;
+   height: 2.6em;
+   line-height: 2.5em;
+   margin-right:600px;
+   margin-top: 25px;
+   position: relative;
+   overflow: hidden;
+   border: 2px solid var(--color);
+   transition: color .5s;
+   z-index: 1;
+   font-size: 17px;
+   border-radius: 6px;
+   font-weight: 500;
+}
+
+.bseleccionar:before {
+   content: "";
+   position: absolute;
+   z-index: -1;
+   background: var(--color);
+   height: 6em;
+   width: 22em;
+   border-radius: 50%;
+}
+   
+.bseleccionar:hover {
+   color: #fff;
+}
+   
+.bseleccionar:before {
+   top: 100%;
+   left: 100%;
+   transition: all .5s;
+}
+   
+.bseleccionar:hover:before {
+   top: -30px;
+   left: -30px;
+}
+   
+.bseleccionar:active:before {
+   background: #0099ff;
+   transition: background 0s;
+}
+
+.texto-seccion{
+   font-family: Arial, Helvetica, sans-serif;
+   margin-left: 200px;
+   margin-top: 40px;
+   position: absolute;
+   color: white;
+   background:rgba(0, 0, 0, 0.623);
+   border-radius: 5px;
+ }
+
+/*    ZONA DE FORM (RELLENAR DATOS)     */
+.section-form{
+   position: relative; 
+   display: block;
+   padding: 30px;
+   width: 800px;
+   height: auto;
+   align-items: center;
+   border-radius: 10px;
+   margin-top: 15px;
+   background-color: rgba(255, 255, 255, 0.4);
+   backdrop-filter: blur(0.5rem);
+   -webkit-backdrop-filter: blur(0.5rem);
+}
+
+
+
+.input-form {
+    background: none;
+    width: 25em;
+    height: 40px;
+    border: 2px solid white;
+    border-radius: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+  }
+  
+.input-form:focus {
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.322);
+    outline-color: rgb(255, 255, 255);
+    box-shadow: -3px -3px 20px rgb(255, 255, 255);
+    transition: .1s;
+    transition-property: box-shadow;
+  }
+
+textarea {
+   width: 500px;
+   height: 100px; 
+   resize: none; 
+   background: none;
+   border: 2px solid white;
+   border-radius: 2px;
+   position: absolute;
+
+}
+textarea:focus {
+   color: rgb(255, 255, 255);
+   background-color: rgba(0, 0, 0, 0.322);
+   outline-color: rgb(255, 255, 255);
+   box-shadow: -3px -3px 20px rgb(255, 255, 255);
+   transition: .1s;
+   transition-property: box-shadow;
+}
+
+
+/*    BOTONES DE GUARDAR/IMPRIMIR/CANCELAR      */
+
+footer{
+   margin-top: -160px;
+   margin-left: 1100px;
+   background:none;
+}
+
+  .botones{
+   --color: #006eff;
+   background-color: #0000009c;
+   color: rgb(255, 255, 255);
+   font-family: Arial, Helvetica, sans-serif;
+   display: block;
+   width: 11em;;
+   height: 2.6em;
+   line-height: 2.5em;
+   margin-bottom: 10px;
+   position: relative;
+   overflow: hidden;
+   border: 2px solid var(--color);
+   transition: color .5s;
+   z-index: 1;
+   font-size: 17px;
+   border-radius: 6px;
+   font-weight: 500;
+}
+   
+.botones:before {
+   content: "";
+   position: absolute;
+   z-index: -1;
+   background: var(--color);
+   height: 6em;
+   width: 22em;
+   border-radius: 50%;
+}
+   
+.botones:hover {
+   color: #fff;
+}
+   
+.botones:before {
+   top: 100%;
+   left: 100%;
+   transition: all .5s;
+}
+   
+.botones:hover:before {
+   top: -30px;
+   left: -30px;
+}
+   
+.botones:active:before {
+   background: #0099ff;
+   transition: background 0s;
+}
+
+
+/*    ZONA BOTONES DE MOTIVO     */
+.radio{
+   background:none;
+   display: block;
+   position: relative;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 15px;
+   margin-top: 140px;
+   margin-bottom: 80px;
+}
+
+/*    ESTO ES PARA HACER TRANSPARENTE EL FONDO DE LAS LETRAS      */
+
+span{
+   background: none;
+}
+h3{
+   background: none;
+}
+label{
+   background: none;
+}
